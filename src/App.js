@@ -1,6 +1,6 @@
 import React from "react";
 import { BrowserRouter as Router, Route } from "react-router-dom";
-import { Paper } from "@material-ui/core";
+import { Container, Paper } from "@material-ui/core";
 import { makeStyles } from "@material-ui/styles";
 import Navbar from "./components/Navbar";
 import ExercisesList from "./components/ExercisesList";
@@ -11,7 +11,7 @@ import CreateUser from "./components/CreateUser";
 export default function App() {
   const useStyles = makeStyles({
     main: {
-      margin: "20px",
+      marginTop: "85px",
       padding: "20px"
     }
   });
@@ -21,12 +21,14 @@ export default function App() {
   return (
     <Router>
       <Navbar />
-      <Paper className={classes.main} square>
-        <Route path="/" exact component={ExercisesList} />
-        <Route path="/edit/:id" component={EditExercise} />
-        <Route path="/create" component={CreateExercise} />
-        <Route path="/user" component={CreateUser} />
-      </Paper>
+      <Container>
+        <Paper className={classes.main} square>
+          <Route path="/" exact component={ExercisesList} />
+          <Route path="/edit/:id" component={EditExercise} />
+          <Route path="/create" component={CreateExercise} />
+          <Route path="/user" component={CreateUser} />
+        </Paper>
+      </Container>
     </Router>
   );
 }

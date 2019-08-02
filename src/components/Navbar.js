@@ -17,7 +17,7 @@ export default function Navbar() {
   const classes = useStyles();
 
   return (
-    <AppBar className={classes.nav} position="sticky">
+    <AppBar className={classes.nav} position="fixed">
       <Toolbar>
         <Typography>Exercise Tracker</Typography>
         <Tabs>
