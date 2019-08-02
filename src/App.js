@@ -12,7 +12,8 @@ export default function App() {
   const useStyles = makeStyles({
     main: {
       marginTop: "85px",
-      padding: "20px"
+      padding: "20px",
+      height: "60vh"
     }
   });
 
