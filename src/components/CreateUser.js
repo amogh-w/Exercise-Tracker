@@ -45,7 +45,11 @@ export default class CreateUser extends Component {
         <Button
           variant="contained"
           color="primary"
-          style={{ margin: "26px 0px" }}
+          style={{
+            margin: "26px 0px",
+            backgroundColor: "#6c7b95",
+            color: "white"
+          }}
           onClick={this.onSubmit}
         >
           Create

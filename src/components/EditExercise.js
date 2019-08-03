@@ -115,7 +115,11 @@ export default class EditExercise extends Component {
         <Button
           variant="contained"
           color="primary"
-          style={{ margin: "20px 0px" }}
+          style={{
+            margin: "20px 0px",
+            backgroundColor: "#6c7b95",
+            color: "white"
+          }}
           onClick={this.onSubmit}
         >
           Update
